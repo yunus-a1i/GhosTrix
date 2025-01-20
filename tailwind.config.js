@@ -2,7 +2,8 @@
 export default {
   darkMode: 'class', // Enables class-based dark mode
   content: [
-    './index.html', // Include the main HTML file
+    './index.html',
+    "professional-platform.html", // Include the main HTML file
     './src/**/*.{js,ts,jsx,tsx}', // Include all JS and TS files inside the src folder
   ],
   theme: {
