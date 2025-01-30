@@ -7,117 +7,112 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    
   </head>
-  <body class=" font-sans bg-orange-100/10 dark:bg-black ">
-    <header class="">
+  <body class="font-sans bg-orange-100/10 dark:bg-black">
+    <header>
       <nav class="mx-auto container flex justify-between pt-4 mx-2 text-lg pb-2 sm:w-[calc(100%-2rem)] md:w-[calc(100%-2rem)] lg:w-[calc(100%-2rem)] xl:w-[calc(100%-2rem)] 2xl:w-[calc(100%-2rem)]">
         <ul class="flex justify-center items-center gap-3 cursor-pointer">
           <li id="theme-toggle" class="p-1 px-3">
-          
-            <a class="drop-shadow-lg" href="#"><img src="skull.png" width="27px" alt=""></a>
+            <a class="drop-shadow-lg" href="#">
+              <i class="fas fa-sun text-orange-400 dark:hidden"></i>
+              <i class="fas fa-moon text-purple-600 hidden dark:inline"></i>
+
+            </a>
           </li>
         </ul>
         
         <ul class="flex justify-end gap-3 md:flex xxs:hidden">
-          <li class="p-1 px-3 drop-shadow-xl  text-gray-700 cursor-pointer hover:text-black dark:hover:text-gray-700 transition duration-300">
-            <a href="#home">Home</a>
+          <li>
+            <a class="custom-li" href="#home">
+              <i class="fas fa-home mr-1"></i>Home
+            </a>
           </li>
         
           <li class="group relative">
-            <button class="p-1 px-3 drop-shadow-xl  text-gray-700 cursor-pointer hover:text-black dark:hover:text-gray-700 transition duration-300">
-              CS Toolbox
+            <button class="custom-li">
+              <i class="fas fa-toolbox mr-1"></i>CS Toolbox
+              <i class='bx bx-chevron-down ml-1'></i>
             </button>
-            <ul class="absolute left-0 mt-2 hidden group-hover:block bg-white border border-gray-200 dark:text-black z-50 ">
-              <li class="p-2 border-bottom hover:bg-gray-100 hover:rounded-t-lg cursor-pointer">
+            <ul class="absolute left-0 mt-2 hidden group-hover:block bg-white text-xs rounded border-gray-200 dark:text-black z-50 ">
+              <li class="dropdown-li hover:rounded-t group">
                 <a href="Professional-platform.html">Professional Platform</a>
               </li>
-              <li class="p-2 border-bottom hover:bg-gray-100 cursor-pointer">
+              <li class="dropdown-li">
                 <a href="programming-pathways.html">Programming Pathways</a>
               </li>
-              <li class="p-2 border-bottom hover:bg-gray-100 cursor-pointer">
+              <li class="dropdown-li">
                 <a href="#">Coding Platform</a>
               </li>
-              <li class="p-2 border-bottom hover:bg-gray-100 cursor-pointer">
+              <li class="dropdown-li">
                 <a href="#">DSA</a>
               </li>
-              <li class="p-2 border-bottom hover:bg-gray-100 cursor-pointer">
+              <li class="dropdown-li">
                 <a href="#">Compilers & IDEs</a>
               </li>
-              <li class="p-2 border-bottom hover:bg-gray-100 hover:rounded-b-lg cursor-pointer">
+              <li class="dropdown-li hover:rounded-b">
                 <a href="#">Roadmap</a>
               </li>
             </ul>
           </li>
         
-          <li class="p-1 px-3 drop-shadow-xl  text-gray-700  cursor-pointer hover:text-black dark:hover:text-gray-700 transition duration-300">
-            <a href="#">Courses</a>
+          <li>
+            <a class="custom-li" href="#">
+              <i class="fas fa-graduation-cap mr-1"></i>Courses
+            </a>
           </li>
-          <li class="p-1 px-3 drop-shadow-xl  text-gray-700  cursor-pointer hover:text-black dark:hover:text-gray-700 transition duration-300">
-            <a href="#">Resume Template</a>
+          <li>
+            <a class="custom-li" href="#">
+              <i class="fas fa-file-alt mr-1"></i>Resume
+            </a>
           </li>
-          <li class="p-1 px-3 drop-shadow-xl  text-gray-700  cursor-pointer hover:text-black dark:hover:text-gray-700 transition duration-300">
-            <a href="#">About</a>
+          <li>
+            <a class="custom-li" href="#">
+              <i class="fas fa-info-circle mr-1"></i>About
+            </a>
           </li>
         </ul>   
-        <button
-    class=" md:hidden p-2 text-yellow-700 focus:outline-none"
-    id="burger-menu"
-  >
-    <!-- Icon -->
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="w-8 h-8"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5"
-      />
-    </svg>
-  </button>     
+        <button class="md:hidden p-2 text-yellow-700 focus:outline-none" id="burger-menu">
+          <i class='bx bx-menu text-3xl'></i>
+        </button>     
       </nav>
     </header>
     
-  <main>
-    
-      <!-- home -->
-      <section class="">
-        <div class="custom-sections rounded container border-solid flex justify-between items-center px-10 ">
+    <main>
+      <section>
+        <div class="custom-sections rounded container border-solid flex justify-between items-center px-10">
           <div>
- 
-            <h1 class="font-mono text-center lg:text-9xl font-extrabold my-6 drop-shadow-lg dark:shadow-gray-950 md:text-8xl sm:text-7xl ssm:text-6xl xxs:text-5xl">Why Ghos<span class="text-transparent bg-clip-text bg-gradient-to-t from-yellow-400 to-orange-500 italic ">Trix</span>?</h1>
+            <h1 class="font-mono text-center lg:text-9xl font-extrabold my-6 drop-shadow-lg dark:shadow-gray-950 md:text-8xl sm:text-7xl ssm:text-6xl xxs:text-5xl">
+              Why Ghos<span class="text-transparent bg-clip-text bg-gradient-to-t from-pink-400 to-purple-500 italic">Trix</span>?
+            </h1>
             <p class="text-center dark:text-gray-500 my-4">Ghostrix simplifies the journey into computer science for beginners and career switchers. We offer clear guides, curated resources, and roadmaps for aspiring frontend developers, backend engineers, data scientists, and analysts—backed by a supportive community to keep you confident and on track.</p>
-            <div class="my-4 flex flex-wrap justify-center gap-3 ">
-              <div class="w-64 p-2 pt-6 rounded shadow-lg border border-gray-600/50">
-                  <h3 class="font-bold font-mono text-center text-yellow-700 dark:text-yellow-500">Tailored Roadmaps</h3>
-                  <p class="text-center text-yellow-700 dark:text-yellow-500">Step-by-step guides for every CS role.</p>
+            <div class="my-4 flex flex-wrap justify-center gap-3">
+              <div class="custom-card">
+                <div class="text-center mb-2">
+                  <i class='bx bx-map text-4xl dark:text-white text-zinc-100'></i>
+                </div>
+                <h3 class="font-bold text-center dark:text-white text-zinc-100">Tailored Roadmaps</h3>
+                <p class="text-center dark:text-white text-zinc-100">Step-by-step guides for every CS role.</p>
               </div>
-              <div class="w-64 p-2 pt-6 rounded shadow-lg  border border-gray-600/50">
-                  <h3 class="font-bold font-mono text-center text-yellow-700 dark:text-yellow-500">Beginner-Friendly</h3>
-                  <p class="text-center text-yellow-700 dark:text-yellow-500">Resources designed for first-time learners.</p>
+              <div class="custom-card">
+                <div class="text-center mb-2">
+                  <i class='bx bx-user-plus text-4xl dark:text-white text-zinc-100'></i>
+                </div>
+                <h3 class="font-bold  text-center dark:text-white text-zinc-100">Beginner-Friendly</h3>
+                <p class="text-center dark:text-white text-zinc-100">Resources designed for first-time learners.</p>
               </div>    
-              <div class="w-64 p-2 pt-6 rounded shadow-lg  border border-gray-600/50">
-                  <h3 class="font-bold font-mono text-center text-yellow-700 dark:text-yellow-500">Beginner-Friendly</h3>
-                  <p class="text-center text-yellow-700 dark:text-yellow-500">Resources designed for first-time learners.</p>
+              <div class="custom-card">
+                <div class="text-center mb-2">
+                  <i class='bx bx-group text-4xl dark:text-white text-zinc-100'></i>
+                </div>
+                <h3 class="font-bold text-center dark:text-white text-zinc-100">Community Support</h3>
+                <p class="text-center dark:text-white text-zinc-100">Join our active developer community.</p>
               </div>    
+            </div>
           </div>
-          
-      
-      
-        
+        </div>
       </section>
-      
-      
     </main>
-    <footer class="footer">
-      <p>&copy; 2025 GhosTrix. All rights reserved.</p>
-  </footer>
+    <p class="text-center text-xs p-2 dark:text-gray-100"> &copy; 2025 GhosTrix. All rights reserved.</p>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-
