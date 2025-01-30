@@ -14,6 +14,14 @@ export default {
         'sm-xs': '375px', // Custom breakpoint for 375px
         xxs: '320px',   // Custom breakpoint for 320px
       },
+      animation: {
+        rotate: 'rotate 4s linear infinite',
+      },
+      keyframes: {
+        rotate: {
+          '100%': { transform: 'rotate(1turn)' },
+        }
+      }
     },
   },
   plugins: [],
