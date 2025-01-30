@@ -22,14 +22,39 @@ body, html {
     padding: 0;
 }
 
+.custom-nav {
+  @apply p-1 px-3 text-zinc-700 ;
+  @apply hover:text-black transition duration-300;
+  @apply dark:hover:text-gray-700 ;
+}
+
 .custom-li {
-  @apply p-1 px-3 font-semibold text-gray-700 border-2 border-black cursor-pointer drop-shadow-xl transition duration-300;
-  @apply shadow-[2px_2px_0_0_white,4px_4px_0_0_black] hover:shadow-[3px_3px_0_0_white,6px_6px_0_0_black];
-  @apply transform hover:-translate-x-[2px] hover:-translate-y-[2px] hover:text-black;
-  @apply dark:border-white dark:hover:text-gray-700 dark:hover:shadow-[2px_2px_0_0_black,4px_4px_0_0_white];
+  @apply py-2 px-3 text-xs text-orange-500/75 rounded bg-zinc-200/50 cursor-pointer;
+  @apply shadow-xl;
+  @apply border border-orange-500/10;
+  @apply  transition duration-300;
+  @apply dark:text-purple-700 dark:bg-zinc-900 dark:border-purple-500/25 dark:hover:text-gray-500 ;
 }
 
 .custom-sections {
-  @apply mx-auto min-h-[825px] h-[auto] sm:w-[calc(100%-2rem)] md:w-[calc(100%-2rem)] lg:w-[calc(100%-2rem)] xl:w-[calc(100%-2rem)] 2xl:w-[calc(100%-2rem)]; 
-  @apply border border-orange-500/10 dark:border-gray-500/10 bg-white dark:bg-white/10 dark:text-white;
+  @apply mx-auto min-h-[810px] h-[auto] sm:w-[calc(100%-2rem)] md:w-[calc(100%-2rem)] lg:w-[calc(100%-2rem)] xl:w-[calc(100%-2rem)] 2xl:w-[calc(100%-2rem)]; 
+  @apply border border-orange-500/10 dark:border-purple-500/25 bg-zinc-200/50 dark:bg-white/10 dark:text-white;
+}
+
+.btn {
+  @apply relative overflow-hidden flex items-center justify-center font-sans font-bold dark:outline outline-1 outline-[#111] before:content-[''] before:absolute before:-z-20 before:w-[300%] before:h-[50%] before:dark:bg-[conic-gradient(#800080,#ff00cb,#800080)] 
+  before:bg-[conic-gradient(#ffa500,#ffa0cb,#ffa500)] 
+  before:animate-[rotate_4s_linear_infinite] after:content-[''] after:absolute after:-z-10 after:inset-[1] after:w-[calc(100%-4px)] after:h-[calc(100%-4px)] after:dark:bg-zinc-900 after:bg-gray-200 after:rounded;
+}
+
+.custom-card {
+  @apply w-64 p-2 pt-6 rounded shadow-lg dark:bg-purple-600 bg-orange-400/90;
+}
+
+.dropdown-li {
+  @apply p-2 hover:bg-gray-100 cursor-pointer text-orange-500/75 dark:text-purple-500 dark:bg-zinc-900;
+}
+
+.platform-cards {
+  @apply w-72 h-80 p-4 rounded-lg shadow-md bg-white dark:bg-black hover:scale-105 transform transition duration-300 flex flex-col;
 }
