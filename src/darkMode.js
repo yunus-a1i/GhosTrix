@@ -22,6 +22,7 @@ const darkMode = () => {
       localStorage.setItem('theme', 'dark'); // Save preference
     }
   });
+  
 }
 
 export default darkMode;
