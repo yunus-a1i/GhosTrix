@@ -9,13 +9,6 @@
     }
   }
 
-footer {
-    background: #1e1e2f;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
 
 body, html {
     margin: 0;
@@ -29,8 +22,8 @@ body, html {
 }
 
 .custom-li {
-  @apply py-2 px-3 text-xs text-orange-500/75 rounded bg-zinc-200/50 cursor-pointer;
-  @apply shadow-xl;
+  @apply py-1 px-4 text-xs text-orange-500/75 rounded bg-zinc-200/50 ;
+  @apply shadow-orange-500/25 dark:shadow-purple-600/25;
   @apply border border-orange-500/10;
   @apply  transition duration-300;
   @apply dark:text-purple-700 dark:bg-zinc-900 dark:border-purple-500/25 dark:hover:text-gray-500 ;
@@ -42,9 +35,10 @@ body, html {
 }
 
 .btn {
-  @apply relative overflow-hidden flex items-center justify-center font-sans font-bold dark:outline outline-1 outline-[#111] before:content-[''] before:absolute before:-z-20 before:w-[300%] before:h-[50%] before:dark:bg-[conic-gradient(#800080,#ff00cb,#800080)] 
+  @apply relative overflow-hidden flex items-center justify-center font-sans font-bold dark:outline outline-1 outline-[#111] before:content-[''] before:absolute before:-z-20 before:w-[100%] before:h-[10%] before:dark:bg-[conic-gradient(#900080,#ff00cb,#900080)] 
   before:bg-[conic-gradient(#ffa500,#ffa0cb,#ffa500)] 
-  before:animate-[rotate_4s_linear_infinite] after:content-[''] after:absolute after:-z-10 after:inset-[1] after:w-[calc(100%-4px)] after:h-[calc(100%-4px)] after:dark:bg-zinc-900 after:bg-gray-200 after:rounded;
+  before:animate-[rotate_4s_linear_infinite] after:content-[''] after:absolute after:-z-10 after:inset-[1] after:w-[calc(100%-4px)] after:h-[calc(100%-4px)] after:dark:bg-zinc-900 after:bg-gray-200 after:rounded
+  hover:scale-105 transform transition duration-300;
 }
 
 .custom-card {
@@ -56,5 +50,5 @@ body, html {
 }
 
 .platform-cards {
-  @apply w-72 h-80 p-4 rounded-lg shadow-md bg-white dark:bg-black hover:scale-105 transform transition duration-300 flex flex-col;
+  @apply w-72 h-80 p-4 border border-orange-500/25 dark:border-purple-500/25 rounded bg-white dark:bg-black flex flex-col;
 }
