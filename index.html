@@ -11,9 +11,9 @@
   <body class="font-sans bg-orange-100/10 dark:bg-black">
     <header>
       <nav class="mx-auto container flex justify-between pt-4 mx-2 text-lg pb-2 sm:w-[calc(100%-2rem)] md:w-[calc(100%-2rem)] lg:w-[calc(100%-2rem)] xl:w-[calc(100%-2rem)] 2xl:w-[calc(100%-2rem)]">
-        <ul class="flex justify-center items-center gap-3 cursor-pointer">
-          <li id="theme-toggle" class="p-1 px-3">
-            <a class="drop-shadow-lg" href="#">
+        <ul class="flex justify-center items-center cursor-pointer">
+          <li id="theme-toggle">
+            <a class="drop-shadow-lg custom-li" href="#">
               <i class="fas fa-sun text-orange-400 dark:hidden"></i>
               <i class="fas fa-moon text-purple-600 hidden dark:inline"></i>
 
@@ -28,13 +28,13 @@
             </a>
           </li>
         
-          <li class="group relative">
+          <li class="group relative ">
             <button class="custom-li">
               <i class="fas fa-toolbox mr-1"></i>CS Toolbox
               <i class='bx bx-chevron-down ml-1'></i>
             </button>
-            <ul class="absolute left-0 mt-2 hidden group-hover:block bg-white text-xs rounded border-gray-200 dark:text-black z-50 ">
-              <li class="dropdown-li hover:rounded-t group">
+            <ul class="absolute left-0 mt-1 hidden group-hover:block bg-white text-xs rounded border-gray-200 dark:text-black z-50 ">
+              <li class="dropdown-li rounded-t group">
                 <a href="Professional-platform.html">Professional Platform</a>
               </li>
               <li class="dropdown-li">
@@ -49,7 +49,7 @@
               <li class="dropdown-li">
                 <a href="#">Compilers & IDEs</a>
               </li>
-              <li class="dropdown-li hover:rounded-b">
+              <li class="dropdown-li rounded-b">
                 <a href="#">Roadmap</a>
               </li>
             </ul>
@@ -82,7 +82,9 @@
         <div class="custom-sections rounded container border-solid flex justify-between items-center px-10">
           <div>
             <h1 class="font-mono text-center lg:text-9xl font-extrabold my-6 drop-shadow-lg dark:shadow-gray-950 md:text-8xl sm:text-7xl ssm:text-6xl xxs:text-5xl">
-              Why Ghos<span class="text-transparent bg-clip-text bg-gradient-to-t from-pink-400 to-purple-500 italic">Trix</span>?
+              Why Ghos<span class="text-transparent bg-clip-text 
+              bg-gradient-to-t from-yellow-400 to-orange-500 
+              dark:from-pink-400 dark:to-purple-500 italic">Trix</span>?
             </h1>
             <p class="text-center dark:text-gray-500 my-4">Ghostrix simplifies the journey into computer science for beginners and career switchers. We offer clear guides, curated resources, and roadmaps for aspiring frontend developers, backend engineers, data scientists, and analysts—backed by a supportive community to keep you confident and on track.</p>
             <div class="my-4 flex flex-wrap justify-center gap-3">
@@ -112,7 +114,10 @@
         </div>
       </section>
     </main>
-    <p class="text-center text-xs p-2 dark:text-gray-100"> &copy; 2025 GhosTrix. All rights reserved.</p>
+    <footer>
+
+      <p class="text-center text-xs p-2 dark:text-gray-100"> &copy; 2025 GhosTrix. All rights reserved.</p>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
