@@ -52,3 +52,7 @@ body, html {
 .platform-cards {
   @apply w-72 h-80 p-4 border border-orange-500/25 dark:border-purple-500/25 rounded bg-white dark:bg-black flex flex-col;
 }
+
+.hidden{
+  display: none;
+}
