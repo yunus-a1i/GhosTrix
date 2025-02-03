@@ -1,12 +1,21 @@
 const programmingLanguage = () => {
+    const buttons = ["Java", "C", "Python", "Cpp"];
     
-    document.getElementById("languageJava").onclick = (e) =>{
-        e.preventDefault()
-        document.getElementById("language-C").classList.toggle("hidden")
-        document.getElementById("language-Python").classList.toggle("hidden")
-        document.getElementById("language-C++").classList.toggle("hidden")
-    }
-
-}
+    let activeLang = "C";
+    
+    buttons.forEach(lang => {
+        const button = document.getElementById(`language${lang}`);
+        button.onclick = (e) => {
+            e.preventDefault();
+            
+            buttons.forEach(l => {
+                document.getElementById(`language-${l}`).classList.toggle("hidden", l !== lang);
+                document.getElementById(`language${l}`).classList.toggle("text-color", l === lang);
+            });
+            
+            activeLang = lang;
+        };
+    });
+};
 
 export default programmingLanguage;
