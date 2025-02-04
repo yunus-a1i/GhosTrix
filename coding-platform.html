@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+</head>
+<body class="bg-orange-100/10 dark:bg-black">
+  <header>
+    <nav class="mx-auto container flex justify-between pt-4 mx-2 text-lg pb-2 sm:w-[calc(100%-2rem)] md:w-[calc(100%-2rem)] lg:w-[calc(100%-2rem)] xl:w-[calc(100%-2rem)] 2xl:w-[calc(100%-2rem)]">
+      <ul class="flex justify-center items-center cursor-pointer">
+        <li id="theme-toggle">
+          <a class="drop-shadow-lg custom-li" href="#">
+            <i class="fas fa-sun text-orange-400 dark:hidden"></i>
+            <i class="fas fa-moon text-purple-600 hidden dark:inline"></i>
+
+          </a>
+        </li>
+      </ul>
+      
+      <ul class="flex justify-end gap-3 md:flex xxs:hidden">
+        <li>
+          <a class="custom-li" href="#home">
+            <i class="fas fa-home mr-1"></i>Home
+          </a>
+        </li>
+      
+        <li class="group relative ">
+          <button class="custom-li">
+            <i class="fas fa-toolbox mr-1"></i>CS Toolbox
+            <i class='bx bx-chevron-down ml-1'></i>
+          </button>
+          <ul class="absolute left-0 mt-1 hidden group-hover:block bg-white text-xs rounded border-gray-200 dark:text-black z-50 ">
+            <li class="dropdown-li rounded-t group">
+              <a href="Professional-platform.html">Professional Platform</a>
+            </li>
+            <li class="dropdown-li">
+              <a href="programming-pathways.html">Programming Pathways</a>
+            </li>
+            <li class="dropdown-li">
+              <a href="#">Coding Platform</a>
+            </li>
+            <li class="dropdown-li">
+              <a href="#">DSA</a>
+            </li>
+            <li class="dropdown-li">
+              <a href="#">Compilers & IDEs</a>
+            </li>
+            <li class="dropdown-li rounded-b">
+              <a href="#">Roadmap</a>
+            </li>
+          </ul>
+        </li>
+      
+        <li>
+          <a class="custom-li" href="#">
+            <i class="fas fa-graduation-cap mr-1"></i>Courses
+          </a>
+        </li>
+        <li>
+          <a class="custom-li" href="#">
+            <i class="fas fa-file-alt mr-1"></i>Resume
+          </a>
+        </li>
+        <li>
+          <a class="custom-li" href="#">
+            <i class="fas fa-info-circle mr-1"></i>About
+          </a>
+        </li>
+      </ul>   
+      <button class="md:hidden p-2 text-yellow-700 focus:outline-none" id="burger-menu">
+        <i class='bx bx-menu text-3xl'></i>
+      </button>     
+    </nav>
+  </header>
+    <section id="coding-platform" >
+        <div class=" rounded container custom-sections dark:bg-white/10">
+            <a class="py-2 px-6 absolute flex justify-center group items-center" href="javascript:void(0);" 
+            onclick="history.back()">
+                <i class='bx bx-arrow-back group-hover:bg-gray-600/20 p-1 rounded-lg'></i>
+                &ensp;back</a>
+            <h1 class="text-center my-6 font-sans text-4xl dark:text-white">Programming Pathways</h1>
+          <nav>
+            <ul class="flex justify-between items-center dark:text-white">
+              <li class="px-4 border-r my-2">
+                <a id="languageC" class="flex justify-center items-center text-color" href="">
+                  <img src="Clanguage.svg" width="20px" alt="">&ensp;C
+                </a>
+              </li>
+              <li class="px-4 border-r my-2">
+                <a id="languageJava" class="flex justify-center items-center" href="">
+                  <img src="java.svg" width="25px" height="25px" alt="">&ensp;Java
+                </a>
+              </li>
+              
+              <li class="px-4 border-r my-2">
+                <a id="languagePython" class="flex justify-center items-center" href="">
+                  <i class="bx bxl-python text-yellow-500 text-xl"></i>&ensp;Python
+                </a>
+              </li>
+              <li class="px-4 my-2">
+                <a id="languageCpp" class="flex justify-center items-center" href="">
+                  <i class="bx bxl-c-plus-plus text-blue-700 text-xl"></i>&ensp;C++
+                </a>
+              </li>
+              
+              
+            </ul>
+            
+            <hr class="shadow-lg">
+          </nav>
+          <div id="language-C" class="m-4">
+            <div  class="mt-5">
+              
+              
+                <h1 class="font-bold m-2">Why C ?</h1>
+
+                <ul class="m-2 list-decimal ml-7">
+                  <li>
+                    <p>C has influenced many modern languages like C++, Java, Python, and more.
+                    </p>
+
+                  </li>
+                  <li>
+                    <p>It is widely used for system programming, embedded systems, and developing operating systems (e.g., Unix, Linux).</p>
+
+                  </li>
+                </ul>
+
+
+                <h1 class="text-5xl font-bold m-2 ">Advantages of Learning C</h1>
+                <ul class="m-2 list-disc ml-7" >
+                  <li>Foundation for Other Languages</li>
+                  <li>High Performance</li>
+                  <li>Industry Demand</li>
+                </ul>
+              
+            </div>
+            <div class="mt-10 flex sm:justify-evenly flex-wrap gap-4">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+            </div>
+          </div>
+          <div id="language-Java" class="m-4 hidden">
+            <div  class="mt-5">
+              
+              
+                <h1 class="font-bold m-2">Why Java ?</h1>
+
+                <ul class="m-2 list-decimal ml-7">
+                  <li>
+                    <p>C has influenced many modern languages like C++, Java, Python, and more.
+                    </p>
+
+                  </li>
+                  <li>
+                    <p>It is widely used for system programming, embedded systems, and developing operating systems (e.g., Unix, Linux).</p>
+
+                  </li>
+                </ul>
+
+
+                <h1 class="text-5xl font-bold m-2">Advantages of Learning C</h1>
+                <ul class="m-2 list-disc ml-7" >
+                  <li>Foundation for Other Languages</li>
+                  <li>High Performance</li>
+                  <li>Industry Demand</li>
+                </ul>
+              
+            </div>
+            <div class="mt-10 flex sm:justify-evenly flex-wrap gap-4">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+            </div>
+          </div>
+          <div id="language-Python" class="m-4 hidden">
+            <div  class="mt-5">
+              
+              
+                <h1 class="font-bold m-2">Why Python ?</h1>
+
+                <ul class="m-2 list-decimal ml-7">
+                  <li>
+                    <p>C has influenced many modern languages like C++, Java, Python, and more.
+                    </p>
+
+                  </li>
+                  <li>
+                    <p>It is widely used for system programming, embedded systems, and developing operating systems (e.g., Unix, Linux).</p>
+
+                  </li>
+                </ul>
+
+
+                <h1 class="text-5xl font-bold m-2">Advantages of Learning C</h1>
+                <ul class="m-2 list-disc ml-7" >
+                  <li>Foundation for Other Languages</li>
+                  <li>High Performance</li>
+                  <li>Industry Demand</li>
+                </ul>
+              
+            </div>
+            <div class="mt-10 flex sm:justify-evenly flex-wrap gap-4">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+            </div>
+          </div>
+          <div id="language-Cpp" class="m-4 hidden">
+            <div  class="mt-5">
+              
+              
+                <h1 class="font-bold m-2">Why C++ ?</h1>
+
+                <ul class="m-2 list-decimal ml-7">
+                  <li>
+                    <p>C has influenced many modern languages like C++, Java, Python, and more.
+                    </p>
+
+                  </li>
+                  <li>
+                    <p>It is widely used for system programming, embedded systems, and developing operating systems (e.g., Unix, Linux).</p>
+
+                  </li>
+                </ul>
+
+
+                <h1 class="text-5xl font-bold m-2">Advantages of Learning C</h1>
+                <ul class="m-2 list-disc ml-7" >
+                  <li>Foundation for Other Languages</li>
+                  <li>High Performance</li>
+                  <li>Industry Demand</li>
+                </ul>
+              
+            </div>
+            <div class="mt-10 flex sm:justify-evenly flex-wrap gap-4">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+              <img class=" h-80 my-4 mx-auto object-cover rounded-lg" src="cprogramming.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <footer>
+
+        <p class="text-center text-xs p-2 dark:text-gray-100"> &copy; 2025 GhosTrix. All rights reserved.</p>
+      </footer>
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
